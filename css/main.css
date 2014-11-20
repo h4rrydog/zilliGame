@@ -75,7 +75,8 @@ body {
    =================== */
 
 .header-container {
-    border-bottom: 20px solid #e44d26;
+    border-top: 20px solid #f9d254;
+    background: url('/img/spots-bg.png');
 }
 
 .footer-container,
@@ -83,10 +84,9 @@ body {
     border-top: 20px solid #e44d26;
 }
 
-.header-container,
 .footer-container,
 .main aside {
-    background: #f16529;
+    background: #f9d254;
 }
 
 .title {
@@ -158,11 +158,13 @@ nav a:hover {
    Author's custom styles
    ========================================================================== */
 
+.hero-logo {
+    float: left;
+}
 
-
-
-
-
+.hero-video {
+    float: left;
+}
 
 
 
