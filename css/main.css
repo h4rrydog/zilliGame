@@ -210,9 +210,22 @@ nav a:hover {
     background-color: #f9d2cb;
 }
 
+.logo {
+    margin-top: -0.5em;
+    margin-bottom: 1em;
+}
+
+.kickstarter-logo {
+    float: left;
+}
+
+.twitter-logo, .youtube-logo {
+    float: right;
+    margin-left: 10px;
+}
+
 .carousel {
     padding-top: 60px;
-    margin-left: 10px;
 }
 
 /* ==========================================================================
