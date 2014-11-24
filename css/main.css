@@ -205,8 +205,14 @@ nav a:hover {
     background-color: #239dd9;
 }
 
-.carousel {
+.carousel-container {
     height: 370px;
+    background-color: #f9d2cb;
+}
+
+.carousel {
+    padding-top: 60px;
+    margin-left: 10px;
 }
 
 /* ==========================================================================
