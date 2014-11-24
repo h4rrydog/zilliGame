@@ -63,6 +63,8 @@ textarea {
 
 body {
     font: 16px/26px Roboto, Helvetica, Helvetica Neue, Arial;
+    width: 100%;
+    height: 100%;
 }
 
 .wrapper {
