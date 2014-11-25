@@ -63,9 +63,8 @@ textarea {
 
 body {
     font: 16px/26px Roboto, Helvetica, Helvetica Neue, Arial;
+    font-weight: 100;
     background: #aaa;
-    margin: 0;
-    padding: 0;
 }
 
 .wrapper {
@@ -79,17 +78,16 @@ body {
 
 .header-container {
     border-top: 28px solid #f9d254;
-    background: url('../img/spots-bg.png');
+    background-image: url('../img/sillyKids.png');
+    background-position: center center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
 }
 
-.footer-container,
-.main aside {
-    border-top: 20px solid #e44d26;
-}
-
-.footer-container,
-.main aside {
-    background: #f9d254;
+.footer-container {
+    background-color: #646464;
+    min-height: 200px;
+    vertical-align: middle;
 }
 
 .title {
@@ -166,22 +164,28 @@ nav a:hover {
     margin-bottom: 28px;
     overflow: hidden;
     vertical-align: middle;
+    text-align: center;
 }
 
 .hero-logo {
-    height: auto;
-    width: 49%;
-    display: inline-block;
-    vertical-align: middle;
+    margin-top: 10px;
 }
 
-.hero-video {
-    height: auto;   
-    width: 49%;
-    display: inline-block;
-    vertical-align: middle;
-    text-align: right;
+.hero-tagline {
+    font-size: 1.4em;
+    font-weight: 400;
+    color: #fff;
 }
+
+.hero-playVideoButton {
+    opacity: 0.7;
+    margin-bottom: 10px;
+}
+
+.hero-playVideoButton:hover {
+    opacity: 1;
+}
+
 
 .section-banner {
     font-size: 2.25em;
@@ -194,6 +198,10 @@ nav a:hover {
     background-color: #f9d254;
 }
 
+.what-copy {
+    font-weight: 400;
+}
+
 .section-banner--why {
     background-color: #e84c2d;
 }
@@ -204,13 +212,14 @@ nav a:hover {
 
 .section-banner--who {
     background-color: #239dd9;
+    vertical-align: middle;
 }
 
 .carousel-container {
     height: 370px;
     width: 100%;
     overflow: hidden;
-    background-color: #f9d2cb;
+    background: url('../img/spots-bg.png');
 }
 
 .logo {
@@ -219,15 +228,38 @@ nav a:hover {
 }
 
 .kickstarter-logo {
-
+    float: left;
 }
 
 .twitter-logo, .youtube-logo {
-    margin-left: 10px;
+    float: right;
+    margin-left: 20px;
 }
 
 .carousel {
     padding-top: 60px;
+}
+
+.helixLogo {
+    display: block;
+    float: left;
+    margin-top: 60px;
+}
+
+.footerCopy {
+    display: block;
+    float: right;
+    color: #fff;
+    text-align: right;
+    line-height: 0.5em;
+    margin-top: 45px;
+    margin-right: 20px;
+}
+
+.cc {
+    display: block;
+    float: right;
+    margin-top: 75px;
 }
 
 /* ==========================================================================
@@ -319,7 +351,7 @@ nav a:hover {
    =============== */
 
     .wrapper {
-        width: 1026px; /* 1140px - 10% for margins */
+        max-width: 830px;
         margin: 0 auto;
     }
 }
