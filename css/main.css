@@ -202,7 +202,8 @@ nav a:hover {
 }
 
 .what-copy {
-    font-weight: 400;
+    font-weight: 100;
+    color: #000;
 }
 
 .section-banner--why {
