@@ -1,7 +1,10 @@
 // Parallax effect
+var touch = Modernizr.touch;
 $('.img-holder').imageScroll({
     coverRatio: 0.5,
-    speed: 0.3
+    speed: 0.3,
+    imageAttribute: touch === true ? 'image-mobile' : 'image',
+    touch: touch
 });
 
 // Carousel handler
