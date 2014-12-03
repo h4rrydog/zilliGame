@@ -197,6 +197,11 @@ nav a:hover {
     color: #fff;
 }
 
+.section-banner > p {
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+}
+
 .section-banner--what {
     background-color: #f9d254;
 }
@@ -228,7 +233,7 @@ nav a:hover {
 
 .logo {
     margin-top: -0.5em;
-    margin-bottom: 1em;
+    margin-bottom: 1.2em;
 }
 
 .kickstarter-logo {
