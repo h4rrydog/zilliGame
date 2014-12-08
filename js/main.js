@@ -7,22 +7,24 @@ $('.img-holder').imageScroll({
     touch: touch
 });
 
-// Fader handler
-$('.fade').slick({
-    autoplay: true,
-    infinite: true,
-    speed: 1000,
-    fade: true,
-    slide: 'div',
-    cssEase: 'linear',
-    arrows: false
-});
+// background swapper 
+$background02 = $('.background02');
 
+
+// function swapHeaderBackground() {
+//     $headerContainer.toggleClass('background01').toggleClass('background02');
+// }
+
+function swapHeaderBackground() {
+    $background02.toggleClass('visible');
+}
+
+setInterval(swapHeaderBackground, 3000);
 
 // Carousel handler
 $('.carousel').slick({
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     infinite: true,
     slidesToShow: 7,
     slidesToScroll: 1,
