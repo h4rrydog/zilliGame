@@ -7,6 +7,18 @@ $('.img-holder').imageScroll({
     touch: touch
 });
 
+// Fader handler
+$('.fade').slick({
+    autoplay: true,
+    infinite: true,
+    speed: 1000,
+    fade: true,
+    slide: 'div',
+    cssEase: 'linear',
+    arrows: false
+});
+
+
 // Carousel handler
 $('.carousel').slick({
     autoplay: true,

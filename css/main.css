@@ -78,13 +78,13 @@ body {
 
 .header-container {
     border-top: 28px solid #f9d254;
-    background-image: url('../img/kids-fun.jpg');
     background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
+    height: 384px;
 }
 
 .footer-container {
@@ -163,24 +163,40 @@ nav a:hover {
    ========================================================================== */
 
 .hero {
-    margin-top: 28px;
-    margin-bottom: 28px;
+    margin-top: -390px;
     overflow: hidden;
     vertical-align: middle;
     text-align: center;
 }
 
+.fade {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: auto;
+    height: 384px;
+    overflow: hidden;
+}
+
+.fadingImage > img {
+    width: 100%;
+    height: auto;
+}
+
 .hero-logo {
+    position: relative;
     margin-top: 10px;
 }
 
 .hero-tagline {
+    position: relative;
     font-size: 1.4em;
     font-weight: 400;
     color: #fff;
 }
 
 .hero-playVideoButton {
+    position: relative;
     opacity: 0.7;
     margin-bottom: 10px;
 }
