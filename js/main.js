@@ -10,11 +10,6 @@ $('.img-holder').imageScroll({
 // background swapper 
 $background02 = $('.background02');
 
-
-// function swapHeaderBackground() {
-//     $headerContainer.toggleClass('background01').toggleClass('background02');
-// }
-
 function swapHeaderBackground() {
     $background02.toggleClass('visible');
 }
