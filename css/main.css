@@ -251,8 +251,8 @@ nav a:hover {
 }
 
 .section-banner > p {
-    margin-top: 1.2em;
-    margin-bottom: 1.2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 .section-banner--what {
@@ -277,16 +277,31 @@ nav a:hover {
     vertical-align: middle;
 }
 
-.carousel-container {
-    height: 370px;
-    width: 100%;
-    overflow: hidden;
-    background: url('../img/spots-bg.png');
+.card-container {
+    display: block;
+    text-align: center;
+    transform: translateZ(1px);
+    font-size: 5em;
+    font-weight: 400;
+    color: #fff;
+    height: 100%;
+}
+
+.center-spacer {
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.card {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .logo {
     margin-top: -0.5em;
-    margin-bottom: 1.2em;
+    margin-bottom: 2em;
 }
 
 .kickstarter-logo {
@@ -296,6 +311,7 @@ nav a:hover {
 .twitter-logo, .youtube-logo {
     float: right;
     margin-left: 20px;
+    margin-bottom: 2em;
 }
 
 .carousel {
@@ -306,6 +322,7 @@ nav a:hover {
     display: block;
     float: left;
     margin-top: 60px;
+
 }
 
 .footerCopy {
