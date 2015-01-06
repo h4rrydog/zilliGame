@@ -278,25 +278,17 @@ nav a:hover {
 }
 
 .card-container {
-    display: block;
     text-align: center;
+    vertical-align: middle;
     transform: translateZ(1px);
-    font-size: 5em;
-    font-weight: 400;
-    color: #fff;
+    width: 100vw;
     height: 100%;
+    padding: 1vh auto;
 }
 
-.center-spacer {
-    content: ' ';
-    display: inline-block;
-    vertical-align: middle;
+.carousel {
+    width: 100%;
     height: 100%;
-}
-
-.card {
-    display: inline-block;
-    vertical-align: middle;
 }
 
 .logo {
@@ -314,8 +306,11 @@ nav a:hover {
     margin-bottom: 2em;
 }
 
-.carousel {
-    padding-top: 60px;
+.centerMaker {
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
 }
 
 .helixLogo {
