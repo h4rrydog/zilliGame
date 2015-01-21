@@ -1,7 +1,7 @@
 // Parallax effect
 var touch = Modernizr.touch;
 $('.img-holder').imageScroll({
-    coverRatio: 0.5,
+    coverRatio: 0.9,
     speed: 0.3,
     imageAttribute: touch === true ? 'image-mobile' : 'image',
     touch: touch
