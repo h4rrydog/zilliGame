@@ -21,6 +21,6 @@ $('.owl-carousel').owlCarousel({
     navigation: false,
     singleItem: true,
     itemScaleUp: true,
-    autoPlay: 5000
+    autoPlay: 10000
 });
 
