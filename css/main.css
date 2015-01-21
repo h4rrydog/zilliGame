@@ -140,6 +140,8 @@ body {
     background-color: #646464;
     min-height: 200px;
     vertical-align: middle;
+    padding-top: 2em;
+    padding-bottom: 1em;
 }
 
 .title {
@@ -250,11 +252,6 @@ nav a:hover {
     color: #fff;
 }
 
-.section-banner > p {
-    margin-top: 2em;
-    margin-bottom: 2em;
-}
-
 .section-banner--what {
     background-color: #f9d254;
 }
@@ -262,6 +259,16 @@ nav a:hover {
 .what-copy {
     font-weight: 100;
     color: #000;
+    margin-top: 2em;
+}
+
+.why-copy, .how-copy {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.who-copy {
+    margin-top: 2em;
 }
 
 .section-banner--why {
