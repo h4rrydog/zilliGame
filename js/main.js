@@ -16,14 +16,11 @@ function swapHeaderBackground() {
 
 setInterval(swapHeaderBackground, 3000);
 
-// Carousel handler
-$('.carousel').slick({
-    autoplay: true,
-    autoplaySpeed: 5000,
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    pauseOnHover: false,
-    fade: true
+// Owl carousel
+$('.owl-carousel').owlCarousel({
+    navigation: false,
+    singleItem: true,
+    itemScaleUp: true,
+    autoPlay: 5000
 });
+
