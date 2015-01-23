@@ -244,6 +244,25 @@ nav a:hover {
     opacity: 1;
 }
 
+.leftCardsContainer {
+    position: absolute;
+    top: 20px;
+    left: -150px;
+}
+
+.rightCardsContainer {
+    position: absolute;
+    top: 20px;
+    right: -150px;
+}
+
+.leftCards {
+    display
+}
+
+.rightCards {
+
+}
 
 .section-banner {
     font-size: 2.25em;
