@@ -246,22 +246,14 @@ nav a:hover {
 
 .leftCardsContainer {
     position: absolute;
-    top: 20px;
-    left: -150px;
+    top: 70px;
+    left: 0;
 }
 
 .rightCardsContainer {
     position: absolute;
-    top: 20px;
-    right: -150px;
-}
-
-.leftCards {
-    display
-}
-
-.rightCards {
-
+    top: 70px;
+    right: 0;
 }
 
 .section-banner {
