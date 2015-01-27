@@ -227,6 +227,7 @@ nav a:hover {
 
 .hero-logo {
     margin-top: 10px;
+    clear: right;
 }
 
 .hero-tagline {
@@ -235,22 +236,30 @@ nav a:hover {
     color: #fff;
 }
 
-.hero-playVideoButton {
+.hero-playButtonWrapper {
+    position: relative;
+    bottom: -10px;
+}
+
+.hero-playButton {
+    display: none;
     opacity: 0.7;
     margin-bottom: 10px;
 }
 
-.hero-playVideoButton:hover {
+.hero-playButton:hover {
     opacity: 1;
 }
 
 .leftCardsContainer {
+    display: none;
     position: absolute;
     top: 70px;
     left: 0;
 }
 
 .rightCardsContainer {
+    display: none;
     position: absolute;
     top: 70px;
     right: 0;
@@ -309,8 +318,20 @@ nav a:hover {
 }
 
 .logo {
-    margin-top: -0.5em;
     margin-bottom: 2em;
+}
+
+.logo > a > img {
+    vertical-align: text-top;
+    margin-left: 7px;
+}
+
+.logo > a {
+    text-decoration: none;
+}
+
+.logo > a:link, .logo > a:visited, .logo > a:active {
+    color: #fff;
 }
 
 .kickstarter-logo {
