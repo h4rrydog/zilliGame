@@ -338,9 +338,9 @@ nav a:hover {
     float: left;
 }
 
-.twitter-logo, .youtube-logo {
+.twitter-logo, .instagram-logo {
     float: right;
-    margin-left: 20px;
+    margin-left: 10px;
     margin-bottom: 2em;
 }
 
