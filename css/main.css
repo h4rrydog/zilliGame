@@ -249,6 +249,37 @@ nav a:hover {
     opacity: 1;
 }
 
+.email, .button {
+    margin: 0;
+    padding: 0.6em;
+    font: Roboto, Helvetica, Helvetica Neue, Arial;
+    font-weight: 100;
+    font-size: 1em;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.email {
+    border: 2px solid #dad9d7;
+}
+
+.button {
+    background-color: #f9d254; 
+    color: #fff;
+    border: 2px solid #f9d254;
+}
+
+* {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0); 
+}
+
+.safeEmail {
+    display: block;
+    clear: both;
+    font-size: .5em;
+    margin-bottom: 2em;
+}
+
 .leftCardsContainer {
     display: none;
     position: absolute;
@@ -316,7 +347,7 @@ nav a:hover {
 }
 
 .logo {
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 .logo > a > img {
@@ -332,14 +363,20 @@ nav a:hover {
     color: #fff;
 }
 
+.logoIcon {
+    margin-right: 30px;
+}
+
+.press {
+    margin-bottom: 2em;
+}
+
 .kickstarter-logo {
     float: left;
 }
 
-.twitter-logo, .instagram-logo {
-    float: right;
-    margin-left: 10px;
-    margin-bottom: 2em;
+.cardSpread {
+    width: 100%;
 }
 
 .centerMaker {
@@ -354,6 +391,9 @@ nav a:hover {
     float: left;
     margin-top: 60px;
 
+}
+
+.social {
 }
 
 .footerCopy {
