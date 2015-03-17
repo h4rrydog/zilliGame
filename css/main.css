@@ -318,6 +318,10 @@ input[type="email"]:focus {
     margin-top: 2em;
 }
 
+.challenge {
+    margin-top: 2em;
+}
+
 .why-copy, .how-copy {
     margin-top: 2em;
     margin-bottom: 2em;
