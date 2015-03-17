@@ -251,7 +251,7 @@ nav a:hover {
 
 .email, .button {
     margin: 0;
-    padding: 0.6em;
+    padding: 0.5em;
     font: Roboto, Helvetica, Helvetica Neue, Arial;
     font-weight: 100;
     font-size: 1em;
@@ -260,13 +260,20 @@ nav a:hover {
 }
 
 .email {
-    border: 2px solid #dad9d7;
+    border: 1px solid #dad9d7;
+}
+
+input[type="email"]:focus {
+    border: 1px solid #f9d254;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
 
 .button {
     background-color: #f9d254; 
     color: #fff;
-    border: 2px solid #f9d254;
+    border: 1px solid #f9d254;
 }
 
 * {
