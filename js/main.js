@@ -24,3 +24,9 @@ $('.owl-carousel').owlCarousel({
     autoPlay: 10000
 });
 
+// CookiesDirective
+$.cookiesDirective({
+    position: 'bottom',
+    explicitConsent: false,
+    linkColor: '#fff'
+});
