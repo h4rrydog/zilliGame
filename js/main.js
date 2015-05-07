@@ -1,11 +1,5 @@
 // Parallax effect
 var touch = Modernizr.touch;
-$('.img-holder').imageScroll({
-    coverRatio: 0.7,
-    speed: 0.3,
-    imageAttribute: touch === true ? 'image-mobile' : 'image',
-    touch: touch
-});
 
 // background swapper 
 $background02 = $('.background02');
@@ -29,4 +23,11 @@ $.cookiesDirective({
     position: 'bottom',
     explicitConsent: false,
     linkColor: '#fff'
+});
+
+$('.img-holder').imageScroll({
+    coverRatio: 0.7,
+    speed: 0.3,
+    imageAttribute: touch === true ? 'image-mobile' : 'image',
+    touch: touch
 });

@@ -82,6 +82,10 @@ body {
     overflow: hidden;
 }
 
+.main-container {
+    overflow: hidden;
+}
+
 .backgroundVideo {
     position: absolute;
     min-width: 100%;
