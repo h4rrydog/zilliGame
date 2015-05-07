@@ -79,6 +79,7 @@ body {
 .header-container {
     border-top: 28px solid #f9d254;
     position: relative;
+    overflow: hidden;
 }
 
 .backgroundVideo {
@@ -87,7 +88,7 @@ body {
     min-height: 100%;
     width: auto;
     height: auto;
-    z-index: -100;
+    z-index: -1;
     top: 0;
     left: 0;
 }
@@ -110,7 +111,7 @@ body {
     -moz-transition: opacity 1s ease-in-out;
     -o-transition: opacity 1s ease-in-out;
     transition: opacity 1s ease-in-out;
-    z-index: -2;
+    z-index: -3;
 }
 
 .background02 {
@@ -131,7 +132,7 @@ body {
     -moz-transition: opacity 1s ease-in-out;
     -o-transition: opacity 1s ease-in-out;
     transition: opacity 1s ease-in-out;   
-    z-index: -1;
+    z-index: -2;
 }
 
 .visible {
@@ -437,6 +438,10 @@ input[type="email"]:focus {
    Media Queries
    ========================================================================== */
 
+/*@media screen and (max-device-width: 800px) {
+    .backgroundVideo { display: none; }
+}*/
+
 @media only screen and (min-width: 480px) {
 
 /* ====================
@@ -514,6 +519,9 @@ input[type="email"]:focus {
         width: 28%;
     }
 }
+
+
+
 
 @media only screen and (min-width: 1140px) {
 
