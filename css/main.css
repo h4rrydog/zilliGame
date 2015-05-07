@@ -438,9 +438,9 @@ input[type="email"]:focus {
    Media Queries
    ========================================================================== */
 
-/*@media screen and (max-device-width: 800px) {
+@media screen and (max-device-width: 800px) {
     .backgroundVideo { display: none; }
-}*/
+}
 
 @media only screen and (min-width: 480px) {
 
