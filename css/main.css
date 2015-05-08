@@ -243,6 +243,7 @@ nav a:hover {
 .hero-logo {
     margin-top: 10px;
     clear: right;
+    max-width: 100%;
 }
 
 .hero-tagline {
@@ -335,6 +336,7 @@ input[type="email"]:focus {
 
 .challenge {
     margin-top: 2em;
+    max-width: 100%;
 }
 
 .why-copy, .how-copy {
@@ -372,6 +374,10 @@ input[type="email"]:focus {
     vertical-align: middle;
 }
 
+.owl-item img {
+    max-width: 100%;
+}
+
 .logo {
     margin-bottom: 1em;
 }
@@ -395,6 +401,7 @@ input[type="email"]:focus {
 
 .press {
     margin-bottom: 2em;
+    max-width: 100%;
 }
 
 .kickstarter-logo {
@@ -436,6 +443,10 @@ input[type="email"]:focus {
     display: block;
     float: right;
     margin-top: 75px;
+}
+
+input {
+    max-width: 100%;
 }
 
 /* ==========================================================================
