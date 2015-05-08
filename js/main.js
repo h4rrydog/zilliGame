@@ -8,7 +8,13 @@ function swapHeaderBackground() {
     $background02.toggleClass('visible');
 }
 
-setInterval(swapHeaderBackground, 3000);
+var mq = window.matchMedia( "(max-device-width: 768px)" );
+
+if (mq.matches) {
+    console.log('MQ matched');
+    setInterval(swapHeaderBackground, 3000);
+}
+
 
 // Owl carousel
 $('.owl-carousel').owlCarousel({
