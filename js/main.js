@@ -1,6 +1,3 @@
-// Parallax effect
-var touch = Modernizr.touch;
-
 // background swapper 
 $background02 = $('.background02');
 
@@ -14,7 +11,6 @@ if (mq.matches) {
     console.log('MQ matched');
     setInterval(swapHeaderBackground, 3000);
 }
-
 
 // Owl carousel
 $('.owl-carousel').owlCarousel({
@@ -31,9 +27,23 @@ $.cookiesDirective({
     linkColor: '#fff'
 });
 
+// Parallax effect
+var touch = Modernizr.touch;
+
 $('.img-holder').imageScroll({
     coverRatio: 0.7,
     speed: 0.3,
     imageAttribute: touch === true ? 'image-mobile' : 'image',
     touch: touch
+});
+
+// GA events on lightbox
+$('#lightbox').click(function() {
+        console.log('lightbox clicked');
+        ga('send', {
+            'hitType': 'event',
+            'eventCategory': 'button',
+            'eventAction': 'click',
+            'eventLabel': 'play film'
+        });
 });
