@@ -40,5 +40,5 @@ $('.img-holder').imageScroll({
 // GA events on lightbox
 $('#lightbox').click(function() {
         console.log('lightbox clicked');
-        ga('send', 'event', 'button', 'click', 'play film');
+        ga('send', 'event', 'button', 'click', 'play film', '1');
 });
