@@ -40,10 +40,5 @@ $('.img-holder').imageScroll({
 // GA events on lightbox
 $('#lightbox').click(function() {
         console.log('lightbox clicked');
-        ga('send', {
-            'hitType': 'event',
-            'eventCategory': 'button',
-            'eventAction': 'click',
-            'eventLabel': 'play film'
-        });
+        ga('send', 'event', 'button', 'click', 'play film');
 });
