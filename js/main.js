@@ -42,3 +42,15 @@ $('#lightbox').click(function() {
         console.log('lightbox clicked');
         ga('send', 'event', 'button', 'click', 'play film', '1');
 });
+
+// GA events on instagram
+$('#instagramLogo').click(function() {
+        console.log('instagram clicked');
+        ga('send', 'event', 'button', 'click', 'instagram', '1');
+});
+
+// GA events on twitter
+$('#twitterLogo').click(function() {
+        console.log('twitter clicked');
+        ga('send', 'event', 'button', 'click', 'twitter', '1');
+});
