@@ -379,6 +379,7 @@ input[type="email"]:focus {
 }
 
 .logo {
+    margin-top: 2em;
     margin-bottom: 1em;
 }
 
@@ -427,6 +428,10 @@ input[type="email"]:focus {
 }
 
 .social {
+    max-width: 520px;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footerCopy {
