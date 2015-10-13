@@ -37,6 +37,25 @@ $('.img-holder').imageScroll({
     touch: touch
 });
 
+// Instafeed
+var feed = new Instafeed({
+    get: 'user',
+    userId: 1576954181, // getzilli
+    resolution: 'thumbnail',
+    limit: 30,
+    sortBy: 'most-recent',
+    clientId: '3a53a32a371c466bb285d52e7efb8129',
+    accessToken: '1576954181.3a53a32.3fca1a3c135e4363aa99f31553b6bb7a'
+});
+feed.run();
+
+// Scroll to top button
+$('.topCircle').click(function() {
+    $('html,body').animate({
+        scrollTop: 0
+    }, 800);
+});
+
 // GA events on lightbox
 $('#lightbox').click(function() {
         console.log('lightbox clicked');
