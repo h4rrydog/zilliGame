@@ -346,6 +346,7 @@ input[type="email"]:focus {
 
 .who-copy {
     margin-top: 2em;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
 }
 
 .section-banner--why {
