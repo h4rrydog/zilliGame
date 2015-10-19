@@ -68,7 +68,7 @@ body {
 }
 
 .wrapper {
-    width: 90%;
+    max-width: 1300px;
     margin: 0 5%;
 }
 
@@ -77,9 +77,21 @@ body {
    =================== */
 
 .header-container {
-    border-top: 28px solid #f9d254;
+    height: 72px;
+    background-color: #fff;
+    color: #aaa;
+    width: 100%;
     position: relative;
-    overflow: hidden;
+    z-index: 100;
+}
+
+.sticky {
+    position: fixed;
+    opacity: 0.95;
+}
+
+.padded {
+    padding-top: 72px;
 }
 
 .main-container {
@@ -177,33 +189,86 @@ nav a:hover {
    Author's custom styles
    ========================================================================== */
 
-.hero {
-    vertical-align: middle;
+.section-banner {
+    font-size: 2.25em;
+    font-weight: 100;
+    line-height: 1.25em;
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 20px;
 }
 
-.fade {
-    height: 400px;
-    width: auto;
-}
-
-.hero-logo {
-    margin-top: 10px;
-    clear: right;
-    max-width: 100%;
-}
-
-.hero-tagline {
-    font-size: 1.8em;
-    font-weight: 400;
-    color: #fff;
-}
-
-.hero-playButtonWrapper {
+/*** Header ***/
+.navigation {
     position: relative;
-    bottom: -10px;
+    overflow: visible;
+    text-align: left;
+}
+
+.navBranding {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.navBar {
+    padding: 0;
+    margin: 0.3em 0 0 175px;
+    display: block;
+    float: left;
+}
+
+.navItem {
+    text-transform: uppercase;
+    font-size: 0.5em;
+    font-weight: 400;
+    display: inline;
+    margin: 0px 20px 0px 20px;
+}   
+
+.buyButton {
+    width: 165px;
+    display: block;
+    float: right;
+    margin: 0.7em 0 0 175px;    
+    font-size: 0.5em;
+    font-weight: 400;
+    text-align: center;
+    border: 1px solid #EEA236;
+    border-radius: 5px;
+    background-color: #F8D56D;
+    color: #000;
+}
+
+/*** Hero ***/
+.section-banner--hero {
+    background-color: #1999D5;
+    background-image: url('../img/bezilli/zilli-bkpattern.png');
+    color: #fff;
+    text-align: left;
+}
+
+.heroTitle {
+    font-size: 2.5em;
+    font-weight: 400;
+    margin: 1.8em 0 0.3em 0;
+}
+
+.heroSubtitle {
+    font-size: 1.2em;
+    /*font-weight: 400;*/
+    margin: 0;
+}
+
+.formLegend {
+    font-size: 0.9em;
+    margin: 1.5em 0 0 0;
+}
+
+.heroImg {
+    display: block;
+    float: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .hero-playButton {
@@ -216,16 +281,20 @@ nav a:hover {
 
 .email, .button {
     margin: 0;
-    padding: 0.5em;
+    padding: 0.25em 1em;
     font: Roboto, Helvetica, Helvetica Neue, Arial;
     font-weight: 100;
-    font-size: 1em;
+    font-size: 0.9em;
     display: inline-block;
     box-sizing: border-box;
 }
 
 .email {
     border: 1px solid #dad9d7;
+
+}
+
+.button {
 }
 
 input[type="email"]:focus {
@@ -236,9 +305,9 @@ input[type="email"]:focus {
 }
 
 .button {
-    background-color: #239dd9;
+    background-color: #F8D56D;
     color: #fff;
-    border: 1px solid #239dd9;
+    border: 1px solid #f8d56d;
 }
 
 * {
@@ -252,35 +321,10 @@ input[type="email"]:focus {
     margin-bottom: 2em;
 }
 
-.leftCardsContainer {
-    display: none;
-    position: absolute;
-    top: 70px;
-    left: 0;
-}
-
-.rightCardsContainer {
-    display: none;
-    position: absolute;
-    top: 70px;
-    right: 0;
-}
-
-.section-banner {
-    font-size: 2.25em;
-    line-height: 1.25em;
-    text-align: center;
-    color: #fff;
-}
-
-.section-banner--what {
-    background-color: #f9d254;
-}
-
-.what-copy {
-    font-weight: 100;
+/*** Home ***/
+.section-banner--home {
+    background-color: #fff;
     color: #000;
-    margin-top: 2em;
 }
 
 .challenge {
@@ -298,36 +342,8 @@ input[type="email"]:focus {
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
 }
 
-.section-banner--why {
-    background-color: #e84c2d;
-}
+.section-banner {
 
-.section-banner--how {
-    background-color: #37b398;
-}
-
-.section-banner--who {
-    background-color: #239dd9;
-    vertical-align: middle;
-}
-
-.section-banner--testimonial {
-    background-color: #999;
-}
-
-.section-banner--social {
-    vertical-align: middle;
-    margin: 0;
-    padding: 0;
-    height: 150px;
-}
-
-.card-container {
-    text-align: center;
-    transform: translateZ(1px);
-    width: 100%;
-    height: 100%;
-    display: table;
 }
 
 .carousel {
@@ -555,8 +571,9 @@ input {
    =============== */
 
     .wrapper {
-        max-width: 830px;
+        max-width: 1300px;
         margin: 0 auto;
+        position: relative;
     }
 }
 
