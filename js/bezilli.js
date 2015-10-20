@@ -48,10 +48,12 @@ $(window).scroll(function() {
     if ($(this).scrollTop() > 1){  
         $('.header-container').addClass("sticky");
         $('.main-container').addClass("padded");
+        $('.zilliSlogan').addClass("hidden");
       }
       else{
         $('.header-container').removeClass("sticky");
         $('.main-container').removeClass("padded");
+        $('.zilliSlogan').removeClass("hidden");
       }
 });
 

@@ -64,7 +64,7 @@ textarea {
 body {
     font: 16px/26px Roboto, Helvetica, Helvetica Neue, Arial;
     font-weight: 100;
-    background: #aaa;
+    background: #fff;
 }
 
 .wrapper {
@@ -96,6 +96,7 @@ body {
 
 .main-container {
     overflow: hidden;
+    margin: 0;
 }
 
 .visible {
@@ -194,6 +195,21 @@ nav a:hover {
     font-weight: 100;
     line-height: 1.25em;
     text-align: center;
+    margin: 0;
+}
+
+.on-top {
+    display: table-cell;
+    position: relative;
+    font-size: 4em;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.imageHolder {
+    display: table;
 }
 
 /*** Header ***/
@@ -207,6 +223,17 @@ nav a:hover {
     position: absolute;
     top: 0;
     left: 0;
+    width: 180px;
+}
+
+.zilliLogo, .zilliSlogan {
+    display: block;
+    clear: both;
+    margin: 0 auto 0 auto;
+}
+
+.zilliLogo {
+    margin-bottom: 10px;
 }
 
 .navBar {
@@ -327,6 +354,62 @@ input[type="email"]:focus {
     color: #000;
 }
 
+.participate {
+    max-width: 290px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px;
+}
+
+.participate-step {
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 0.3em;
+}
+
+.participate-text {
+    margin-top: 0;
+    font-size: 0.7em;    
+    line-height: 1.2em;
+}
+
+#home-bezillions {
+    margin: 1em 0;
+}
+
+/*** Featured ***/
+.section-banner--featured {
+    background-color: #fff;
+    color: #000;
+}
+
+.ringmaster {
+    position: absolute;
+    right: 0;
+    top: -135px;
+}
+
+#featured-bezillions {
+    margin: 1em 0;
+}
+
+/*** Social ***/
+.section-banner--social {
+    background-color: #fff;
+    color: #000;
+}
+
+.selfie {
+    position: absolute;
+    right: 0;
+    top: -200px;
+}
+
+#social-bezillions {
+   margin: 1em 0; 
+}
+
 .challenge {
     margin-top: 2em;
     max-width: 100%;
@@ -340,10 +423,6 @@ input[type="email"]:focus {
 .who-copy {
     margin-top: 2em;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
-}
-
-.section-banner {
-
 }
 
 .carousel {
