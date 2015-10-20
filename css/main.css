@@ -177,6 +177,17 @@ nav a:hover {
    Author's custom styles
    ========================================================================== */
 
+.backgroundVideo {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
 .hero {
     vertical-align: middle;
     text-align: center;
