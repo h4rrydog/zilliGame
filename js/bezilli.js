@@ -57,12 +57,77 @@ $(window).scroll(function() {
       }
 });
 
+// Cue Home Zillions!
+var homeZillions = new Waypoint({
+    element: $('#home-bezillions'),
+    handler: function(direction) {
+        var timestamp = new Date().getTime();
+
+        if (direction === 'down') {
+            if (this.armed === 1) {
+                this.element.attr('src', '../img/bezilli/home-BeZillions-in.gif?' + timestamp);
+            } else {
+                this.armed = 1;
+            }
+        }
+
+        if ((direction === 'up') && (this.armed === 1)) {
+            this.element.attr('src', '../img/bezilli/home-BeZillions-out.gif?' + timestamp);
+        }
+    },
+    offset: 'bottom-in-view',
+    armed: 0
+});
+
+// Cue Featured Zillions!
+var featuredWaypoint = new Waypoint({
+    element: $('#featured-bezillions'),
+    handler: function(direction) {
+        var timestamp = new Date().getTime();
+
+        if (direction === 'down') {
+            if (this.armed === 1) {
+                this.element.attr('src', '../img/bezilli/featured-BeZillions-in.gif?' + timestamp);
+            } else {
+                this.armed = 1;
+            }
+        }
+
+        if ((direction === 'up') && (this.armed === 1)) {
+            this.element.attr('src', '../img/bezilli/featured-BeZillions-out.gif?' + timestamp);
+        }
+    },
+    offset: 'bottom-in-view',
+    armed: 0
+});
+
+// Cue Social Zillions!
+var socialWaypoint = new Waypoint({
+    element: $('#social-bezillions'),
+    handler: function(direction) {
+        var timestamp = new Date().getTime();
+
+        if (direction === 'down') {
+            if (this.armed === 1) {
+                this.element.attr('src', '../img/bezilli/social-BeZillions-in.gif?' + timestamp);
+            } else {
+                this.armed = 1;
+            }
+        }
+
+        if ((direction === 'up') && (this.armed === 1)) {
+            this.element.attr('src', '../img/bezilli/social-BeZillions-out.gif?' + timestamp);
+        }
+    },
+    offset: 'bottom-in-view',
+    armed: 0
+});
 
 // Scroll to top button
 $('.topCircle').click(function() {
     $('html,body').animate({
         scrollTop: 0
-    }, 800);
+    }, 2000);
 });
 
 // GA events on lightbox

@@ -31,7 +31,7 @@ $.cookiesDirective({
 var touch = Modernizr.touch;
 
 $('.img-holder').imageScroll({
-    coverRatio: 0.7,
+    coverRatio: 1.0,
     speed: 0.3,
     imageAttribute: touch === true ? 'image-mobile' : 'image',
     touch: touch

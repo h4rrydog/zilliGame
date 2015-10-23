@@ -410,6 +410,18 @@ input[type="email"]:focus {
    margin: 1em 0; 
 }
 
+/*** Kudos ***/
+.section-banner--kudos {
+    background-color: #fff;
+    color: #000;
+}
+
+.tophat {
+    position: absolute;
+    right: 0;
+    top: -150px;
+}
+
 .challenge {
     margin-top: 2em;
     max-width: 100%;
