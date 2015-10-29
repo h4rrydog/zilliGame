@@ -34,27 +34,83 @@ $('.img-holder').imageScroll({
 var feed = new Instafeed({
     get: 'user',
     userId: 1576954181, // getzilli
-    resolution: 'thumbnail',
-    limit: 30,
+    resolution: 'low_resolution',
+    limit: 5,
     sortBy: 'most-recent',
     clientId: '3a53a32a371c466bb285d52e7efb8129',
     accessToken: '1576954181.3a53a32.3fca1a3c135e4363aa99f31553b6bb7a',
-    template: '<a target="_blank" href="{{link}}"><img src="{{image}}" /></a>'
+    template: '<a target="_blank" href="{{link}}"><img class="instaImg" src="{{image}}" /></a>'
 });
 feed.run();
 
 // Sticky nav bar
 $(window).scroll(function() {
-    if ($(this).scrollTop() > 1){  
+    if ($(this).scrollTop() > 1) {
         $('.header-container').addClass("sticky");
         $('.main-container').addClass("padded");
         $('.zilliSlogan').addClass("hidden");
       }
-      else{
+      else {
         $('.header-container').removeClass("sticky");
         $('.main-container').removeClass("padded");
         $('.zilliSlogan').removeClass("hidden");
       }
+});
+
+// Helper cachedNav
+var cachedNav = {
+    top: $('#navTop'),
+    featured: $('#navFeatured'),
+    social: $('#navSocial'),
+    kudos: $('#navKudos')
+};
+
+function hltNavSection(section) {
+    for (var item in cachedNav) {
+        cachedNav[item].removeClass("highlighted");
+    }
+    cachedNav[section].addClass("highlighted");
+};
+
+// Nav bar section highlight
+var navigateHome = new Waypoint({
+    element: $('#top'),
+    handler: function(direction) {
+        hltNavSection("top");
+    }
+});
+
+var navigateFeatured = new Waypoint({
+    element: $('#featured'),
+    handler: function(direction) {
+        if (direction === "down") {
+            hltNavSection("featured");
+        } else if (direction === "up") {
+            hltNavSection("top");
+        }
+    }
+});
+
+var navigateSocial = new Waypoint({
+    element: $('#social'),
+    handler: function(direction) {
+        if (direction === "down") {
+            hltNavSection("social");
+        } else if (direction === "up") {
+            hltNavSection("featured");
+        }
+    }
+});
+
+var navigateKudos = new Waypoint({
+    element: $('#kudos'),
+    handler: function(direction) {
+        if (direction === "down") {
+            hltNavSection("kudos");
+        } else if (direction === "up") {
+            hltNavSection("social");
+        }
+    }
 });
 
 // Cue Home Zillions!
@@ -124,11 +180,16 @@ var socialWaypoint = new Waypoint({
 });
 
 // Scroll to top button
-$('.topCircle').click(function() {
+$('.topCircle').click(function(e) {
+    e.preventDefault();
     $('html,body').animate({
         scrollTop: 0
     }, 2000);
 });
+
+$('#topLink').click(function(e) {
+    e.preventDefault();
+})
 
 // GA events on lightbox
 $('#lightbox').click(function() {

@@ -183,7 +183,7 @@ nav a:hover {
    =============== */
 
 .ie7 .title {
-    padding-top: 20px;
+    padding-top: 1em;
 }
 
 /* ==========================================================================
@@ -224,6 +224,22 @@ nav a:hover {
     top: 0;
     left: 0;
     width: 180px;
+}
+
+.navItem a:link, .navItem a:active, .navItem a:hover, .navItem a:visited {
+    text-decoration: none;
+}
+
+.navItem a:link, .navItem a:visited {
+    color: #9b9b9b;
+}
+
+.navItem a:active, .navItem a:hover {
+    color: #000;
+}
+
+.highlighted {
+    color: #f8d56d !important;
 }
 
 .zilliLogo, .zilliSlogan {
@@ -354,6 +370,10 @@ input[type="email"]:focus {
     color: #000;
 }
 
+.homeTitle {
+    margin-top: 2em;
+}
+
 .participate {
     max-width: 290px;
     display: inline-block;
@@ -387,7 +407,54 @@ input[type="email"]:focus {
 .ringmaster {
     position: absolute;
     right: 0;
-    top: -135px;
+    top: -270px;
+}
+
+.wrapper--featured {
+    text-align: left;
+}
+
+.featuredTitle {
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+}
+
+.github {
+    display: inline-block;
+    vertical-align: text-bottom;
+    margin-right: 20px;
+}
+
+.project {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #979797;
+    background-color: #d8d8d8;
+    position: relative;
+    margin: 10px 10px 10px 0;
+}
+
+.project--core::after {
+    content: "";
+    background-image: url("../img/bezilli/core-icon.png");
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.project--contrib::after {
+    content: "";
+    background-image: url("../img/bezilli/contrib-icon.png");
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 
 #featured-bezillions {
@@ -406,6 +473,73 @@ input[type="email"]:focus {
     top: -200px;
 }
 
+.socialIcon {
+    margin-right: 50px;
+    vertical-align: middle;
+}
+
+.instagramFeedContainer {
+    margin-top: 160px;
+    position: relative;
+    overflow: hidden;
+}
+
+.instagramFeedContainer::after {
+    content: "";
+    background-image: url("../img/bezilli/etc-mask.png");
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#instafeed {
+    display: block;
+    width: 1500px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.instaImg {
+    height: 298px;
+    width: 298px;
+    display: inline-block;
+    margin: 0 20px 0 0;
+    border: 1px solid #979797;
+}
+
+.twitterFeedContainer {
+    position: relative;
+    overflow: hidden;
+}
+
+.twitterFeedContainer::after {
+    content: "";
+    background-image: url("../img/bezilli/etc-mask.png");
+    background-repeat: no-repeat;;
+    height: 100%;
+    width: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.twitterFeed {
+    display: block;
+    width: 1500px;
+    overflow: hidden;
+}
+
+.tweet {
+   display: inline-block;
+   margin: 0 20px 0 0;
+   width: 300px;
+   border: 1px solid #fff;
+   vertical-align: middle;
+}
+
 #social-bezillions {
    margin: 1em 0; 
 }
@@ -422,28 +556,29 @@ input[type="email"]:focus {
     top: -150px;
 }
 
-.challenge {
-    margin-top: 2em;
-    max-width: 100%;
+.kudosIntro {
+    margin-top: 3em;
 }
 
-.why-copy, .how-copy {
-    margin-top: 2em;
-    margin-bottom: 2em;
+ul.KSbackers {
+    line-height: 0.1em;
+    background-image: url("../img/bezilli/kickstarter-watermark.png");
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
-.who-copy {
-    margin-top: 2em;
-    text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+.KSbackers li {
+    margin: 0;
+    font-size: 0.3em;
+    font-weight: 400;
+    display: inline-block;
+    width: 200px; 
+    line-height: 1em;
 }
 
-.carousel {
-    display: table-cell !important;
-    vertical-align: middle;
-}
-
-.owl-item img {
-    max-width: 100%;
+.imperial, .rca {
+    display: inline-block;
+    margin: 2em 100px;
 }
 
 .logo {
@@ -495,18 +630,10 @@ input[type="email"]:focus {
 
 }
 
-.social {
-    position: relative;
-    margin-bottom: 2em;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#instafeed {
-    width: 110%;
-    height: 300px;
-    opacity: 0.5;
-    overflow: hidden;
+.twitterFeed {
+    margin-top: 1em;
+    display: block;
+    clear: both;
 }
 
 .testimonial {
