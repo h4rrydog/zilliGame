@@ -70,7 +70,19 @@ function hltNavSection(section) {
         cachedNav[item].removeClass("highlighted");
     }
     cachedNav[section].addClass("highlighted");
-};
+}
+
+// Nav bar and topButton scroll to link
+var $root = $('html, body');
+$('a').click(function() {
+    var href = $.attr(this, 'href');
+    $root.animate({
+        scrollTop: $(href).offset().top + 1
+    }, 1500, function () {
+        window.location.hash = href;
+    });
+    return false;
+});
 
 // Nav bar section highlight
 var navigateHome = new Waypoint({
@@ -178,18 +190,6 @@ var socialWaypoint = new Waypoint({
     offset: 'bottom-in-view',
     armed: 0
 });
-
-// Scroll to top button
-$('.topCircle').click(function(e) {
-    e.preventDefault();
-    $('html,body').animate({
-        scrollTop: 0
-    }, 2000);
-});
-
-$('#topLink').click(function(e) {
-    e.preventDefault();
-})
 
 // GA events on lightbox
 $('#lightbox').click(function() {
