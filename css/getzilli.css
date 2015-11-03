@@ -78,7 +78,7 @@ body {
 
 .header-container {
     height: 72px;
-    background-color: #fff;
+    background-color: #000;
     color: #aaa;
     width: 100%;
     position: relative;
@@ -87,7 +87,7 @@ body {
 
 .sticky {
     position: fixed;
-    opacity: 0.95;
+    opacity: 0.9;
 }
 
 .padded {
@@ -205,8 +205,9 @@ nav a:hover {
     font-weight: 400;
     color: #fff;
     text-align: center;
-    vertical-align: middle;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+    vertical-align: middle;
+    line-height: 1.2em;
 }
 
 .imageHolder {
@@ -232,11 +233,11 @@ nav a:hover {
 }
 
 .navItem a:link, .navItem a:visited {
-    color: #9b9b9b;
+    color: #646464;
 }
 
 .navItem a:active, .navItem a:hover {
-    color: #000;
+    color: #fff;
 }
 
 .highlighted {
@@ -285,22 +286,47 @@ nav a:hover {
 
 /*** Hero ***/
 .section-banner--hero {
-    background-color: rgba(25,153,213,0.75);
-    background-image: url('../img/bezilli/zilli-bkpattern.png');
     color: #fff;
-    text-align: left;
+    font-size: 2.25em;
+    line-height: 1.25em;
+    text-align: center;
+    position: relative;
+}
+
+.cards {
+    width: 100%;
+    height: auto;
+}
+
+.backgroundVideo {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.heroContent {
+    padding: 2em 0;
 }
 
 .heroTitle {
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: 400;
-    margin: 1.8em 0 0.3em 0;
+    color: #fad154;
+    margin: 1.8em 0 0.5em 0;
+    text-shadow: 0px 0px 10px rgba(127, 127, 127, 1);
 }
 
 .heroSubtitle {
     font-size: 1.2em;
     /*font-weight: 400;*/
-    margin: 0;
+    margin: 1em auto;
+    max-width: 830px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
 }
 
 .formLegend {
@@ -308,18 +334,9 @@ nav a:hover {
     margin: 1.5em 0 0 0;
 }
 
-.heroImg {
-    display: block;
-    float: right;
-    position: absolute;
-    height: 100%;
-    width: auto;
-    bottom: 0;
-    right: 0;
-}
-
 .hero-playButton {
     opacity: 0.7;
+    transition: all 0.2s ease-in-out;
 }
 
 .hero-playButton:hover {
@@ -370,42 +387,47 @@ input[type="email"]:focus {
 
 /*** Home ***/
 .section-banner--home {
-    background-color: #fff;
+    background-color: #f9d254;
     color: #000;
+    position: relative;
+    padding: 1.5em 0;
+}
+
+.buyButtonLg {
+    width: 20%;
+    display: block;
+    margin: 1em auto 0.1em auto;
+    padding: 0.3em;
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+    border: 1px solid #1999d5;
+    border-radius: 5px;
+    background-color: #52b2df;
+    color: #fff;    
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.download {
+    color: #fff;
+    font-size: 0.5em;
+}
+
+.download a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .homeTitle {
     margin-top: 2em;
 }
 
-.participate {
-    max-width: 290px;
-    display: inline-block;
-    vertical-align: top;
-    padding: 5px;
-}
-
-.participate-step {
-    text-transform: uppercase;
-    font-size: 1em;
-    font-weight: 400;
-    margin-bottom: 0.3em;
-}
-
-.participate-text {
-    margin-top: 0;
-    font-size: 0.7em;    
-    line-height: 1.2em;
-}
-
-#home-bezillions {
-    margin: 1em 0;
-}
-
-/*** Featured ***/
-.section-banner--featured {
-    background-color: #fff;
-    color: #000;
+/*** Challenge ***/
+.section-banner--challenge {
+    background-color: #e84c2d;
+    color: #fff;
+    padding: 1.5em 0;
 }
 
 .ringmaster {
@@ -437,7 +459,6 @@ input[type="email"]:focus {
     background-color: #d8d8d8;
     position: relative;
     margin: 10px 10px 10px 0;
-    overflow: hidden;
 }
 
 .project--core::after {
@@ -462,40 +483,15 @@ input[type="email"]:focus {
     right: 10px;
 }
 
-.projectName {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 10px 20px;
-    margin: 0;
-    font-size: 0.5em;
-    line-height: 1.5em;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 260px;
-}
-
-.projectImg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0.5;
-    transition: all 0.5s ease-in-out;
-}
-
-.projectImg:hover {
-    transform: scale(1.1);
-    opacity: 1;
-}
-
 #featured-bezillions {
     margin: 1em 0;
 }
 
-/*** Social ***/
-.section-banner--social {
-    background-color: #fff;
-    color: #000;
+/*** Reward ***/
+.section-banner--reward {
+    background-color: #37b398;
+    color: #fff;
+    padding: 1.5em 0;
 }
 
 .selfie {
@@ -526,19 +522,24 @@ input[type="email"]:focus {
     right: 0;
 }
 
+.social {
+    height: 150px;
+    overflow: hidden;
+}
+
 #instafeed {
-    display: block;
-    width: 1500px;
+    width: 110%;
     height: 300px;
     overflow: hidden;
 }
 
 .instaImg {
-    height: 298px;
-    width: 298px;
-    display: inline-block;
-    margin: 0 20px 0 0;
-    border: 1px solid #979797;
+    opacity: 0.5;
+    transition: all 0.2s ease-in-out;
+}
+
+.instaImg:hover {
+    opacity: 1;
 }
 
 .twitterFeedContainer {
@@ -560,7 +561,6 @@ input[type="email"]:focus {
 .twitterFeed {
     display: block;
     width: 1500px;
-    min-height: 750px;
     overflow: hidden;
 }
 
@@ -576,10 +576,11 @@ input[type="email"]:focus {
    margin: 1em 0; 
 }
 
-/*** Kudos ***/
-.section-banner--kudos {
-    background-color: #fff;
-    color: #000;
+/*** Expand ***/
+.section-banner--expand {
+    background-color: #239dd9;
+    color: #fff;
+    padding: 1.5em 0;
 }
 
 .tophat {
@@ -643,6 +644,11 @@ ul.KSbackers {
     float: left;
 }
 
+.bezilli {
+    text-decoration: none;
+    color: #fff;
+}
+
 .cardSpread {
     width: 100%;
     margin-bottom: 2em;
@@ -666,6 +672,13 @@ ul.KSbackers {
     margin-top: 1em;
     display: block;
     clear: both;
+}
+
+/*** Testimonial ***/
+.section-banner--testimonial {
+    background-color: #999;
+    color: #fff;
+    padding: 1.5em 0;
 }
 
 .testimonial {

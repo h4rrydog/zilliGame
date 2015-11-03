@@ -77,7 +77,7 @@ var $root = $('html, body');
 $('a').click(function() {
     var href = $.attr(this, 'href');
     $root.animate({
-        scrollTop: $(href).offset().top + 1
+        scrollTop: $(href).offset().top
     }, 1500, function () {
         window.location.hash = href;
     });
@@ -87,6 +87,7 @@ $('a').click(function() {
 // Nav bar section highlight
 var navigateHome = new Waypoint({
     element: $('#top'),
+    offset: 1,
     handler: function(direction) {
         hltNavSection("top");
     }
@@ -94,6 +95,7 @@ var navigateHome = new Waypoint({
 
 var navigateFeatured = new Waypoint({
     element: $('#featured'),
+    offset: 1,
     handler: function(direction) {
         if (direction === "down") {
             hltNavSection("featured");
@@ -105,6 +107,7 @@ var navigateFeatured = new Waypoint({
 
 var navigateSocial = new Waypoint({
     element: $('#social'),
+    offset: 1,
     handler: function(direction) {
         if (direction === "down") {
             hltNavSection("social");
@@ -116,6 +119,7 @@ var navigateSocial = new Waypoint({
 
 var navigateKudos = new Waypoint({
     element: $('#kudos'),
+    offset: 1,
     handler: function(direction) {
         if (direction === "down") {
             hltNavSection("kudos");
