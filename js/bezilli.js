@@ -5,14 +5,6 @@ if (mq.matches) {
     setInterval(swapHeaderBackground, 3000);
 }
 
-// Owl carousel
-$('.owl-carousel').owlCarousel({
-    navigation: false,
-    singleItem: true,
-    itemScaleUp: true,
-    autoPlay: 10000
-});
-
 // CookiesDirective
 $.cookiesDirective({
     position: 'bottom',
