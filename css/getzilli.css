@@ -266,14 +266,18 @@ nav a:hover {
     font-size: 0.5em;
     font-weight: 400;
     display: inline;
-    margin: 0px 20px 0px 20px;
+    margin: 0 20px 0 20px;
 }   
+
+.optional {
+    display: none;
+}
 
 .buyButton {
     width: 165px;
     display: block;
     float: right;
-    margin: 0.7em 0 0 175px;    
+    margin: 0.7em 0 0 0;    
     font-size: 0.5em;
     font-weight: 400;
     text-align: center;
@@ -740,94 +744,35 @@ input {
    Media Queries
    ========================================================================== */
 
-@media screen and (max-device-width: 768px) {
-    .backgroundVideo { display: none; }
+@media screen and (max-width: 640px) {
+    body {
+        width: 640px;
+    }
+
+    .buyButton {
+        width: 100px;
+    }
 }
 
-@media only screen and (min-width: 480px) {
-
-/* ====================
-    INTERMEDIATE: Menu
-   ==================== */
-
-    nav a {
-        float: left;
-        width: 27%;
-        margin: 0 1.7%;
-        padding: 25px 2%;
-        margin-bottom: 0;
+@media only screen and (min-width: 640px) {
+    .navItem {
+        margin-right: 5px;
     }
 
-    nav li:first-child a {
-        margin-left: 0;
+    .wrapper {
+        max-width: 1300px;
+        margin: 0 auto;
+        position: relative;
     }
+}
 
-    nav li:last-child a {
-        margin-right: 0;
-    }
-
-/* ========================
-    INTERMEDIATE: IE Fixes
-   ======================== */
-
-    nav ul li {
+@media only screen and (min-width: 900px) {
+    .optional {
         display: inline;
     }
-
-    .oldie nav a {
-        margin: 0 0.7%;
-    }
 }
 
-@media only screen and (min-width: 768px) {
-    .background01, .background02 { display: none; }
-
-/* ====================
-    WIDE: CSS3 Effects
-   ==================== */
-
-    /*
-    .header-container,
-    .main aside {
-        -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
-    }
-    */
-
-/* ============
-    WIDE: Menu
-   ============ */
-
-    .title {
-        float: left;
-    }
-
-    nav {
-        float: right;
-        width: 38%;
-    }
-
-/* ============
-    WIDE: Main
-   ============ */
-
-    .main article {
-        float: left;
-        width: 57%;
-    }
-
-    .main aside {
-        float: right;
-        width: 28%;
-    }
-}
-
-
-
-
-@media only screen and (min-width: 1140px) {
-    .background01, .background02 { display: none; }
+@media only screen and (min-width: 1280px) {
 
 /* ===============
     Maximal Width
