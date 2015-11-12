@@ -3,11 +3,168 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<head>
-    <title>Ujinga: Survival of the Silliest</title>
-</head>
-<body style="overflow:hidden; margin: 0; padding: 0">
-    <iframe id="iframe2" src="ujinga.html" frameborder="0" style="overflow: hidden; height: 100%; width: 100%; position: absolute; margin: 0; padding: 0" height="100%" width="100%"></iframe>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="google-site-verification" content="2ZKcwekt0avdcjKVINWppOftuOaDd7ZE1nkJYPR-WME" />
+        <meta name="google-site-verification" content="X4uD-IplTCf4EkAP5oAN9bSS5y46Iv-Xn4uj4q0KeUo" />
+        <title>Get Zilli: Survival of the Silliest</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href='http://fonts.googleapis.com/css?family=Roboto:100,400' rel='stylesheet' type='text/css' >
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="js/vendor/owl-carousel/owl.carousel.css">
+        <link rel="stylesheet" href="js/vendor/owl-carousel/owl.theme.css">
+        <link href="js/vendor/featherlight/featherlight.css" rel="stylesheet" />
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body id="top">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="header-container section-banner">
+            <header class="wrapper clearfix">
+                <div class="hero">
+                    <img class="hero-logo" src="img/ujinga-logo.png" alt="Zilli: Survival of the Silliest" />
+                    <p class="who-copy">Zilli is the hilarious activity card game where you make your friends act out funny things.</p>
+                    <p class="logo"><a id="lightbox" data-featherlight="iframe" data-featherlight-iframe-width="640" data-featherlight-iframe-height="360" href="https://www.youtube.com/embed/tjHgZEu2unY?rel=0&amp;showinfo=0&amp;autoplay=1"><img class="hero-playButton" src="img/play-button.png"/></a></p>
+                    <img class="press" src="img/press.png" />
+                </div>
+            </header>
+            <div class="background01"></div>
+            <div class="background02"></div>
+            <video class="backgroundVideo" autoplay loop poster="img/kids-fun2.jpg"> 
+                <source src="img/bg-video.webm" type="video/webm">
+                <source src="img/bg-video.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="main-container section-banner--what">
+            <article class="wrapper clearfix">
+                <section class="section-banner">
+
+                <p class="what-copy">Want Zilli but missed our Kickstarter campaign? Give us your email & we'll tell you when we launch.</p> 
+
+                <!-- Begin MailChimp Signup Form -->
+                <div id="mc_embed_signup">
+                    <form action="//helixcentre.us3.list-manage.com/subscribe/post?u=d8168afc0eda5836171f642b2&amp;id=9cf8bfcf23" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <div id="mc_embed_signup_scroll">
+                        
+                    <div class="mc-field-group">
+                        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email address"><input type="submit" value="Notify me!" name="subscribe" id="mc-embedded-subscribe" class="button">
+                        <label for="mce-EMAIL" class="safeEmail">* Don't worry, your email is safe with us.</label>
+                    </div>
+                        <div id="mce-responses" class="clear">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;"><input type="text" name="b_d8168afc0eda5836171f642b2_9cf8bfcf23" tabindex="-1" value=""></div>
+                        </div>
+                    </form>
+                </div>
+                <!--End mc_embed_signup-->                    
+
+                </section>
+            </article>
+        </div>
+
+        <div class="main-container img-holder" data-image="img/kids-dance.jpg" data-image-mobile="img/kids-dance.jpg" data-width="1800" data-height="900">
+        </div>
+
+        <div class="main-container section-banner--why">
+
+            <article class="wrapper clearfix">
+                <section class="section-banner">
+                    <div class="owl-carousel challenge">
+                        <div><img src="img/cards01.png"/></div>
+                        <div><img src="img/cards02.png"/></div>
+                        <!-- <div><img src="img/cards03.png"/></div> -->
+                    </div>
+                    <p class="why-copy">You’re the Ringmaster. Choose a three card challenge for your friends to combine and act out at the same time. Make it silly. Make it hard. Make them sweat.</p>
+                </section>
+            </article>
+        </div>
+
+        <div class="main-container img-holder section-banner--how" data-image="img/kids-conga.jpg" data-image-mobile="img/kids-conga.jpg" data-width="1800" data-height="900"></div>
+
+        <div class="main-container section-banner--how">
+            <article class="wrapper clearfix">
+                <section class="section-banner">
+                    <img class="challenge" src="img/questions.png" />
+                    <p class="how-copy">Reward the funniest acts. Take turns being Ringmaster and keep going until you run out of cards. The silliest player is crowned Zilli Master!</p>  
+                </section>
+            </article>
+        </div>
+
+        <div class="main-container img-holder section-banner--who" data-image="img/zilli-cards.jpg" data-image-mobile="img/zilli-cards.jpg" data-width="1800" data-height="900"></div>
+
+        <div class="main-container section-banner--who">
+            <article class="wrapper clearfix">
+                <section class="section-banner">
+                    <p class="how-copy">56 hilarous Zilli cards bursting with colour & character. Our silliness cannot be contained!<br><br><img class="cardSpread" src="img/card-spread-02.png" /></p>
+                </section>
+            </article>
+        </div>
+
+        <div class="main-container img-holder section-banner--who" data-image="img/social-kids.jpg" data-image-mobile="img/social-kids.jpg" data-width="1800" data-height="900"></div>
+
+        <div class="main-container section-banner--testimonial">
+            <article class="wrapper clearfix">
+                <section class="section-banner">
+                    <p><img src="img/zilli-love.png" /></p>
+                    <p class="testimonial">"[Zilli] was a big hit! Although having got C to bed before the action started, [C woke up and] everything fell apart in a happy bouncy way after that!" <br><strong>- A parent in UK</strong></p><hr>
+
+                    <p class="testimonial">"You can see they are actually enjoying this! I can't see anyone sitting out - every one of them is taking part!" <br><strong>- A Girl Guides leader in UK</strong></p><hr>
+
+                    <p class="testimonial">"I've tried it with my 7-year old daughter and her friends, and they loved it!!!! [I suggest] you develop a Spanish version." <br><strong>- A parent in Mexico</strong></p><hr>
+
+                    <p class="testimonial">"We were looking for activities to include in the platform and distribute for free and found [Zilli] fantastic. We would like to translate into Portuguese and make it freely available for parents, schools..." <br><strong>- An organisation in Brazil</strong></p><hr>
+
+                    <p class="testimonial">"A very moving game..." <br><strong>- An uncle in Germany</strong></p><hr>
+
+                    <p>Have fun, stay silly and join in!</p>
+
+                    <p class="logo"><a href="http://instagram.com/GetZilli/" id="instagramLogo"><img class="logoIcon" src="img/instagram.png"></a> <a href="https://twitter.com/GetZilli" id="twitterLogo"><img class="logoIcon" src="img/twitter.png"></a></p>
+                    <p><strong>#BEZILLI</strong></p>
+                </section>
+            </article>
+        </div>
+
+
+
+        <div class="main-container section-banner--social">
+            <div class="social">
+                <div id="instafeed"></div>
+            </div>
+        </div>
+        <div class="footer-container">
+            <div class="topCircle"><p class="topCircleText"><a href="#top">&#8673;<br>TOP</a></p></div>
+            <div class="wrapper clearfix">
+                <div class="helixLogo">
+                    <a href="http://helixcentre.com"><img src="img/helix-white.png" /></a>
+                </div>
+                <div class="cc">
+                    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+                </div>
+                <div class="footerCopy">
+                    <p>Free to play and remix forever.</p>
+                    <p>Contribute new rules and cards online.</p>
+                    <p>Open source design.</p>
+                </div>
+            </div>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+        <script src="js/vendor/jquery.imageScroll.min.js"></script>
+        <script src="js/vendor/owl-carousel/owl.carousel.js"></script>
+        <script src="js/vendor/featherlight/featherlight.js"></script>
+        <script src="js/vendor/jquery.cookiesdirective.js"></script>
+        <script type="text/javascript" src="js/vendor/instafeed.min.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
@@ -20,5 +177,8 @@
             ga('send', 'pageview');
 
         </script>
-</body>
+
+        <script src="js/main.js"></script>
+
+    </body>
 </html>
